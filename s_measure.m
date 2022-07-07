@@ -1,5 +1,5 @@
 function sdis = s_measure(genome1,genome2,genome3,C,appr,apprR)
-global tsec1 tsec2 tsec3 s_type r s0 M L N tf f0 run run2 mu ac bc
+global tsec1 tsec2 tsec3 r s0 M L N tf f0 run run2 mu ac bc
  
 %Uncomment if you want to import data from name2.dat
 %Gdata = {'genome1','genome2','genome3'};
@@ -208,7 +208,7 @@ txt2 = sprintf(' t=%g',tsec2);
 text(1,B2(1),strcat('\leftarrow',txt2));
 txt3 = sprintf(' t=%g',tsec3);
 text(1,B3(1),strcat('\leftarrow',txt3));
-txt4 = sprintf('s type: %s,r=%g,s0=%g,M=%g,L=%g,N=%g,tf=%g,f0=%g,runs=%g,attempt=%g,MuL=%g,ac=%g,bc=%g',s_type,r,s0,M,L,N,tf,f0,run,run2,mu*L,ac,bc);
+txt4 = sprintf('r=%g,s0=%g,M=%g,L=%g,N=%g,tf=%g,f0=%g,runs=%g,attempt=%g,MuL=%g,ac=%g,bc=%g',r,s0,M,L,N,tf,f0,run,run2,mu*L,ac,bc);
 %text(90,B3(90)+3,txt4)
 title(strcat('Srank curves',txt4));
 hold on
